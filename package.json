@@ -1,0 +1,34 @@
+{
+  "name": "techstride-media-landing",
+  "version": "1.0.0",
+  "description": "Landing page for TechStride Media, specializing in digital marketing and web design.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "marketing",
+    "web design"
+  ],
+  "author": "TechStride Media",
+  "license": "MIT",
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "^2.2.19",
+    "framer-motion": "^4.1.17"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "latest",
+    "postcss": "^8.3.6"
+  }
+}
