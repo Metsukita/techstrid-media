@@ -3,66 +3,63 @@ import React from 'react';
 const services = [
 	{
 		title: 'Implementação de CRM Comercial',
-		description:
-			'Organize e potencialize seu setor comercial com as melhores ferramentas e processos.',
-		icon: 'https://cdn.jsdelivr.net/gh/tabler/icons@latest/icons/brand-hubspot.svg', // CRM
-		iconColor: 'text-orange-500',
+		icon: '/icons/crm.svg',
 	},
 	{
-		title: 'Treinamento Comercial',
-		description:
-			'Capacite sua equipe para converter mais e melhor, com técnicas modernas e acompanhamento.',
-		icon: 'https://cdn.jsdelivr.net/gh/tabler/icons@latest/icons/school.svg', // Treinamento
-		iconColor: 'text-emerald-500',
+		title: 'Treinamento comercial',
+		icon: '/icons/training.svg',
 	},
 	{
-		title: 'Gestão de Anúncios',
-		description:
-			'Facebook, Google, Youtube Ads e mais. Gestão completa para gerar oportunidades reais.',
-		icon: 'https://cdn.jsdelivr.net/gh/tabler/icons@latest/icons/brand-google-ads.svg', // Ads
-		iconColor: 'text-blue-500',
+		title: 'Gerenciamento do Facebook Ads',
+		icon: '/icons/facebook.svg',
 	},
 	{
-		title: 'Landing Pages & Criativos',
-		description:
-			'Páginas e criativos de alta conversão, pensados para transformar cliques em clientes.',
-		icon: 'https://cdn.jsdelivr.net/gh/tabler/icons@latest/icons/layout-dashboard.svg', // Landing Page
-		iconColor: 'text-pink-500',
+		title: 'Gerenciamento do Google Ads',
+		icon: '/icons/google.svg',
+	},
+	{
+		title: 'Gerenciamento em Youtube Ads',
+		icon: '/icons/youtube.svg',
+	},
+	{
+		title: 'Elaboração de landing page de alta conversão',
+		icon: '/icons/landing.svg',
+	},
+	{
+		title: 'Elaboração de criativos de alta conversão',
+		icon: '/icons/creative.svg',
+	},
+	{
+		title: 'Consultoria Estratégica',
+		icon: '/icons/consulting.svg',
 	},
 ];
 
 const Services: React.FC = () => {
 	return (
-		<section
-			id="services"
-			className="section bg-gradient-to-b from-white to-blue-50"
-		>
+		<section id="services" className="py-20 bg-black text-white">
 			<div className="container text-center">
-				<h2 className="text-4xl font-extrabold mb-4 text-gray-900">
-					Nossos Serviços
+				<h2 className="text-4xl font-extrabold mb-4">
+					Nossos principais{' '}
+					<span className="underline decoration-orange-400 decoration-4 underline-offset-8">
+						serviços
+					</span>
+					:
 				</h2>
-				<p className="text-lg text-gray-600 mb-12">
-					Veja como podemos acelerar o crescimento do seu negócio
-				</p>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-					{services.map((service, index) => (
+				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-12">
+					{services.map((service, idx) => (
 						<div
-							key={index}
-							className="card flex flex-col items-center text-center hover:shadow-2xl transition bg-white rounded-2xl p-8 shadow-md group"
+							key={idx}
+							className="flex flex-col items-center justify-center border border-orange-500 bg-black rounded-md py-10 px-4 min-h-[180px] min-w-[220px] shadow-lg hover:scale-105 transition-all duration-200"
 						>
-							<div
-								className={`rounded-full bg-gradient-to-tr from-blue-100 to-white shadow-lg mb-4 flex items-center justify-center w-20 h-20 transition-transform duration-300 group-hover:scale-110`}
-							>
-								<img
-									src={service.icon}
-									alt={service.title}
-									className={`w-12 h-12 ${service.iconColor} transition-transform duration-300 group-hover:rotate-6`}
-								/>
-							</div>
-							<h3 className="text-xl font-bold mb-2 text-blue-700">
+							<img
+								src={service.icon}
+								alt={service.title}
+								className="h-14 mb-4"
+							/>
+							<span className="font-semibold text-lg leading-tight text-white mt-2">
 								{service.title}
-							</h3>
-							<p className="text-gray-600">{service.description}</p>
+							</span>
 						</div>
 					))}
 				</div>
