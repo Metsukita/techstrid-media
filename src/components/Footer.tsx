@@ -5,7 +5,8 @@ const Footer: React.FC = () => {
         <footer className="footer">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-                    <div className="mb-4 md:mb-0 text-center md:text-left">
+                    <div className="mb-4 md:mb-0 text-center md:text-left flex flex-col items-center md:items-start">
+                        <img src="/logo.png" alt="TechStride Media Logo" className="h-10 w-10 mb-2 bg-white rounded-full shadow" />
                         <h5 className="text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 mb-2">TechStride Media</h5>
                         <p className="text-sm text-gray-300">Seu crescimento é o nosso sucesso.</p>
                     </div>
