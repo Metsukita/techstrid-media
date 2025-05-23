@@ -28,17 +28,17 @@ const CompetitiveAdvantages: React.FC = () => {
                 <h2 className="text-4xl font-extrabold mb-4 drop-shadow-lg">Por que escolher a TechStride Media?</h2>
                 <p className="text-lg text-white/80 mb-12">Descubra nossos diferenciais competitivos que nos tornam a escolha ideal para suas necessidades de marketing digital e web design.</p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div className="card bg-white/10 backdrop-blur-md border border-white/20 hover:shadow-2xl transition">
-                        <h3 className="text-xl font-bold mb-4 text-yellow-200">Performance</h3>
-                        <p className="text-white/90">Maximizamos o desempenho de suas campanhas com estratégias baseadas em dados e análises detalhadas.</p>
+                    <div className="rounded-2xl shadow-xl p-8 bg-white/90 hover:shadow-2xl transition">
+                        <h3 className="text-xl font-bold mb-4 text-yellow-600">Performance</h3>
+                        <p className="text-gray-800">Maximizamos o desempenho de suas campanhas com estratégias baseadas em dados e análises detalhadas.</p>
                     </div>
-                    <div className="card bg-white/10 backdrop-blur-md border border-white/20 hover:shadow-2xl transition">
-                        <h3 className="text-xl font-bold mb-4 text-pink-200">Personalização</h3>
-                        <p className="text-white/90">Nossos serviços são adaptados às suas necessidades específicas, garantindo resultados que atendem às suas expectativas.</p>
+                    <div className="rounded-2xl shadow-xl p-8 bg-white/90 hover:shadow-2xl transition">
+                        <h3 className="text-xl font-bold mb-4 text-pink-600">Personalização</h3>
+                        <p className="text-gray-800">Nossos serviços são adaptados às suas necessidades específicas, garantindo resultados que atendem às suas expectativas.</p>
                     </div>
-                    <div className="card bg-white/10 backdrop-blur-md border border-white/20 hover:shadow-2xl transition">
-                        <h3 className="text-xl font-bold mb-4 text-blue-200">Atendimento</h3>
-                        <p className="text-white/90">Oferecemos suporte excepcional, com uma equipe dedicada pronta para ajudar você a cada passo do caminho.</p>
+                    <div className="rounded-2xl shadow-xl p-8 bg-white/90 hover:shadow-2xl transition">
+                        <h3 className="text-xl font-bold mb-4 text-blue-600">Atendimento</h3>
+                        <p className="text-gray-800">Oferecemos suporte excepcional, com uma equipe dedicada pronta para ajudar você a cada passo do caminho.</p>
                     </div>
                 </div>
             </div>
